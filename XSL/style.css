@@ -1,0 +1,76 @@
+/* style.css */
+body {
+    background-color: silver;
+    border: thick double #38598b;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    border-style: double;
+    border-bottom: 4px solid #6a0808;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+
+h2 {
+    background-color: silver;
+    border-style: double;
+    border-color: white;
+    text-align: center;
+}
+
+h3 {
+    background-color: #96ceb4;
+
+}
+
+.css_perso {
+
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+.abreviation {
+    color: black;
+    font-style: italic;
+}
+
+.rubrique {
+  color: purple;
+text-align: left;
+font-weight: bold;}
+
+
+
+.legende {
+    display: flex;
+    border-bottom: solid black;
+}
+
+.biblio {
+    border-top: dotted 1px;
+    border-bottom: dotted 1px;
+    margin: 3px;
+    padding: 3px
+}
+
+dt {
+    margin: 5px;
+}
+li {
+    margin: 10px;
+}
+
+img {
+    margin: 20px;
+}
+
+
+div.row {
+    display: flex;
+}

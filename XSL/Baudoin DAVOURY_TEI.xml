@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "Baudoin_DAVOURY.dtd">
+
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+    xmlns:s="http://purl.oclc.org/dsdl/schematron" xml:lang="fr">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title ref="https://gallica.bnf.fr/ark:/12148/btv1b6000418r">Première partie du roman en prose de Lancelot du Lac</title>
+            <author>Gautier Map</author>
+         </titleStmt>
+
+         <editionStmt>
+            <edition>Evaluation XML-TEI – TNAH | 2021-2022
+               <date when="2022-02-07">07 février 2022</date>
+            </edition>
+            <respStmt>
+            <resp> Édition à visée paléographique : Lancelot en prose, Chapitres 056/057 : Quête de Gauvain et situation d’Hector </resp>
+            <persName xml:id="BD">
+               <forename>Baudoin</forename>
+               <surname>Davoury</surname>
+            </persName>
+            </respStmt>
+         </editionStmt>
+
+				 <publicationStmt>
+						 <publisher>Edition par l'Ecole nationale des Chartes</publisher>
+						 <pubPlace>Paris</pubPlace>
+						 <address>
+								 <addrLine>65 Rue de Richelieu</addrLine>
+								 <addrLine>75002 Paris</addrLine>
+								 <addrLine>FRANCE</addrLine>
+						 </address>
+						 <availability status="free">
+								 <p>Dans un cadre de recherche ou d'enseignement</p>
+						 </availability>
+						 <date when-iso="2022-02">Frevrier 2022</date>
+				 </publicationStmt>
+
+         <sourceDesc>
+					 <msDesc xml:id="ms16999">
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <repository>Bibliothèque nationale de France - Département des manuscrits</repository>
+                  <idno>Français 16999</idno>
+                  <altIdentifier>
+                     <idno> Séguier-Coislin. — Saint-Germain français 117</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>ark:/12148/btv1b6000418r</idno>
+                  </altIdentifier>
+               </msIdentifier>
+
+               <head>
+                  <title>Première partie du roman en prose de Lancelot du Lac</title>
+									<origDate notBefore="1325" notAfter="1350">Deuxième quart du 14e
+											siècle.</origDate>
+							</head>
+
+               <msContents>
+								 <summary>L'oeuvre se compose d'une seule partie de 291 feuillets.</summary>
+								 <textLang mainLang="fre">Ancien français</textLang>
+	                  <msItem xml:id="Quête-de-Gauvain-et-situation-d-Hector">
+	                     <locus from="102v" to="103v">folio 102v à 103v</locus>
+	                     <author xml:id="GM">Gautier Map</author>
+	                  </msItem>
+               </msContents>
+
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Parchemin</support>
+                        <extent>
+                           <width unit="410mm"/>
+                           <height unit="300mm"/>
+                        </extent>
+                        <foliation>291 feuillets(dont quelques uns absents à la fin du manuscrit) et 10 pages de gardes au début et à la fin</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+											 <!-- disposition du texte sur le folio -->
+
+                        <layout columns="3">Texte justifié en 3 colonnes, tracéss à la ligne de plomb
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+
+                  <scriptDesc>
+                     <scriptNote>Écriture en lettre de forme</scriptNote>
+                  </scriptDesc>
+
+                  <decoDesc>
+                     <p> Présence de lettrines enluminées au début d'un nouveau
+                        paragraphe et faisant une hauteur de deux lignes</p>
+
+										<decoNote type="initial">Certaines majuscules, sûrement pour marquer le
+														début d'une partie, sont enluminées. Elles sont alors allongées et
+														rehaussées de bleu et rouge ainsi qu’ornées de motifs rappelant des
+														rinceaux. Les lettrines prennent sont tracées sur deux
+														lignes.</decoNote>
+
+										<decoNote type="initial" xml:id="L1"> Lettre L : lettrine colorée de 2
+																lignes de hauteur sur un fond de cadre vert. Du côté gauche de la
+																lettrine partent deux branches, finissant pour la branche inférieur avec des feuilles
+																et la branche supérieur avec une gueule d'animale.</decoNote>
+
+										<decoNote type="initial" xml:id="A2"> Lettre A : lettrine rosée de 2
+																						lignes de hauteur sur un fond de cadre vert. Du côté gauche de la
+																						lettrine partent deux branches.</decoNote>
+								 	<decoNote type="initial" xml:id="A3"> Lettre A : A la manière de <ref target="#A2"> lettrine rosée de 2
+																												lignes de hauteur sur un fond de cadre vert. Du côté gauche de la
+																												lettrine partent deux branches.</decoNote>
+									<decoNote type="initial" xml:id="L4"> Lettre D : lettrine bleu de 2	lignes de hauteur sur un fond de cadre vert.</decoNote>
+
+                  </decoDesc>
+
+                 <bindingDesc>
+                    <binding>
+                       <decoNote type="plats">Reliure en cuir de veau raciné avec au centre en doré les armoiries de Séguier</decoNote>
+                       <decoNote type="dos">Dos à 7 nerfs en veau raciné. Présence d'initiales en dorée dans les cases
+                        pour la plupart effacées et difficile à déchiffrer. On peut deviner toutefois l'inscription "Lancelot"
+                        dans la deuxième case. Dans la dernière case, inscription à l'encre de la cote du mansucrit "Fr 16999"
+                       </decoNote>
+                       <decoNote type="contreplats">Contreplats de feuilles de parchemins avec étiquette de la cote du manuscrit
+                       "FR. 16999"
+                       </decoNote>
+                    </binding>
+                 </bindingDesc>
+								 <sealDesc>
+							 			<p>Le sceau sur le plat de devant montre des ornements d'azur au chevron
+							 					d'or, accompagné en chef de deux étoiles de même, et en pointe d'un
+							 					mouton d'argent passant.</p>
+							 	</sealDesc>
+               </physDesc>
+
+							 <history>
+						 			<origin>France</origin>
+						 			<provenance>
+						 					<p>Le manuscrit a appartenu au chancelier <persName>Pierre
+						 									Séguier</persName>.</p>
+						 			</provenance>
+						 			<provenance>
+						 					<p>Puis il est entré en possession de Henri di Cambout (1665-1739), duc
+						 							de Coislin et évêque de Metz</p>
+						 			</provenance>
+						 			<provenance>
+						 					<p>Puis il est légué à l'abbaye Saint- Germain-des-Prés (1732)</p>
+						 			</provenance>
+						 			<provenance>
+						 					<p>Et enfin il entre à la BN à la Révolution</p>
+						 			</provenance>
+						 			<provenance>
+						 					<listBibl>
+						 							<head> Bibliographie des ouvrages mentionnant le <bibl
+						 											corresp="#ms16999">manuscrit 16999</bibl></head>
+						 							<bibl xml:id="Aniel-2008">
+						 									<author>Notice par <persName>Jean Pierre
+						 											ANIEL</persName></author>
+						 									<title type="a">La rubrique et l'image dans le manuscrit
+						 											médiéval : quelques remarques</title>
+						 									<title type="m">Qu'est-ce que nommer? L' image légendée entre
+						 											monde monastique et pensée scolastique ; actes du colloque
+						 											du RILMA, Institut Universitaire de France (Paris, INHA, 17
+						 											- 18 octobre 2008) </title>
+						 									<pubPlace>Turnhout</pubPlace>
+						 									<publisher>Brepols</publisher>
+						 									<date>2008</date>
+						 									<biblScope unit="page">p. 101 - 110</biblScope>
+						 							</bibl>
+						 							<bibl xml:id="Heck-2010">
+						 									<idno type="ISBN">978-2-503-53426-8</idno>
+						 									<author><persName>Christian HECK</persName></author>
+						 									<title type="m">Qu'est-ce que nommer? L'image légendée entre
+						 											monde monastique et pensée scolastique</title>
+						 									<pubPlace>Turnhout</pubPlace>
+						 									<publisher>Brepols</publisher>
+						 									<date>2010</date>
+						 							</bibl>
+						 							<bibl xml:id="Salamon-2010">
+						 									<idno type="ISBN">978-2-84050-798-7</idno>
+						 									<author><persName>Cécile LE CORNEC-ROCHELOIS</persName>,
+						 													<persName>Anne ROCHEBOUET</persName>, <persName>Anne
+						 													SALAMON (dir.)</persName></author>
+						 									<title type="m">Le texte médiéval : de la variante à la
+						 											recréation</title>
+						 									<pubPlace/>
+						 									<publisher/>
+						 									<date>2012</date>
+						 									<biblScope unit="page">p. 211</biblScope>
+						 							</bibl>
+						 							<bibl xml:id="Pyun-2010">
+						 									<idno type="ISBN">978-1-905375-46-2</idno>
+						 									<author><persName>Kyunghee PYUN</persName> et <persName>Anna D.
+						 													RUSSAKOFF</persName></author>
+						 									<title type="m">Jean Pucelle : innovation and collaboration in
+						 											manuscript painting</title>
+						 									<pubPlace>Turnhout</pubPlace>
+						 									<publisher>Brepols</publisher>
+						 									<date>2013</date> London <biblScope unit="page">p. 119
+						 											n32</biblScope>
+						 									<biblScope unit="page">p. 122 n55</biblScope>
+						 									<biblScope unit="page">p. 129</biblScope>
+						 							</bibl>
+						 							<bibl xml:id="Dumitrescu-2014">
+						 									<note> Bibliographie relatif à un dépouillement bibliographique: </note>
+						 									<author>L.-I. DUMITRESCU</author>
+						 									<title>« Le rôle de l'homologie dans quelques armoiries
+						 											littéraires », dans Marqueurs d'identité dans la littérature
+						 											médiévale: mettre en signe l'individu et la famille
+						 											(XIIe-XVe siècles) : actes du colloque tenu à Poitiers les
+						 											17 et 18 novembre 2011, textes réunis par <persName>Catalina
+						 													Girbea</persName>, <persName>Laurent Hablot</persName>
+						 											et <persName>Raluca Radulescu</persName></title>
+						 									<pubPlace>Turnhout</pubPlace>
+						 									<publisher>Brepols</publisher>
+						 									<date>2014</date>
+						 									<biblScope>p. 129-133, cité p. 131</biblScope>
+						 							</bibl>
+						 							<bibl xml:id="Whetter-2017">
+						 									<author>K.S. WHETTER</author>
+						 									<title type="a">The manuscript and meaning of Malory's’Morte
+						 											Darthur : rubrication, commemoration,
+						 											memorialization</title>
+						 									<pubPlace>Cambridge</pubPlace>
+						 									<publisher>DS Brewer</publisher>
+						 									<date>2017</date>
+						 									<biblScope>p. 47</biblScope>
+						 							</bibl>
+						 					</listBibl>
+						 			</provenance>
+						 	</history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="Groadain">
+                  <persName>
+                     <forename>Groadain</forename>
+                     <addName type="surnom">nain</addName>
+                  </persName>
+               </person>
+
+               <person xml:id="nièce">
+                 <persName>
+                    <addName type="surnom">nièce</addName>
+                 </persName>
+               </person>
+
+               <person xml:id="Hestor">
+                  <persName>
+                     <forename>Hector</forename>
+                     <nameLink>des</nameLink>
+                     <surname>Mares</surname>
+                  </persName>
+                  <note>fils du roi Ban de <placeName ref="#Bénoïc">Bénoïc</placeName> et de la fille d' Agravadain. Demi-frère de Lancelot</note>
+               </person>
+
+               <person xml:id="Segurades">
+                  <persName>
+                     Ségurades
+                  </persName>
+                  <note>chevalier</note>
+               </person>
+
+               <person xml:id="Guenievre">
+                  <persName>
+                     <forename>Guenièvre</forename>
+                  </persName>
+                  <note>reine de <placeName ref="#Bretagne">Bretagne</placeName> et épouse du
+											roi <persName ref="#Arthur">Arthur</persName>.</note>
+               </person>
+
+               <person xml:id="Artus">
+                  <persName>
+                     <forename>Arthur</forename>
+                  </persName>
+                  <note> roi de <placeName ref="#Bretagne">Bretagne</placeName></note>
+               </person>
+
+               <person xml:id="Dame-de-Rohestoc">
+                  <persName>
+                     Dame de <placeName ref="Rohestoc">Rohestoc</placeName>
+                  </persName>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+
+  </teiHeader>
+   <facsimile>
+        <surface>
+           <graphic url='lancelot_102v.JPEG' width='1024px' height='1387px' />
+
+           <zone xml:id='l1' points=' 664,453  540,453  540,454  664,454 ' rendition="default" />
+
+           <zone xml:id='l2' points=' 662,470  539,470  539,471  662,471 ' rendition="default" />
+
+           <zone xml:id='l3' points=' 659,492  488,492  488,489  659,489 ' rendition="default" />
+
+           <zone xml:id='l4' points=' 657,509  489,509  489,506  657,506 ' rendition="default" />
+
+           <zone xml:id='l6' points=' 660,526  488,526  488,524  660,524 ' rendition="default" />
+
+           <zone xml:id='l7' points=' 488,546  660,546  660,544  488,544 ' rendition="default" />
+
+           <zone xml:id='l8' points=' 659,565  486,565  486,561  659,561 ' rendition="default" />
+
+           <zone xml:id='l9' points=' 660,581  486,581  486,579  660,579 ' rendition="default" />
+
+           <zone xml:id='l10' points=' 665,599  487,599  487,595  665,595 ' rendition="default" />
+
+           <zone xml:id='l11' points=' 665,617  482,617  482,613  665,613 ' rendition="default" />
+
+           <zone xml:id='l12' points=' 667,633  488,633  488,631  667,631 ' rendition="default" />
+
+           <zone xml:id='l13' points=' 668,649  491,649  491,645  668,645 ' rendition="default" />
+
+           <zone xml:id='l14' points=' 667,671  488,671  488,664  667,664 ' rendition="default" />
+
+           <zone xml:id='l15' points=' 666,683  489,683  489,680  666,680 ' rendition="default" />
+
+           <zone xml:id='l16' points=' 667,704  489,704  489,698  667,698 ' rendition="default" />
+
+           <zone xml:id='l17' points=' 674,721  491,721  491,718  674,718 ' rendition="default" />
+
+           <zone xml:id='l18' points=' 672,738  490,738  490,734  672,734 ' rendition="default" />
+
+           <zone xml:id='l19' points=' 670,755  487,755  487,752  670,752 ' rendition="default" />
+
+           <zone xml:id='l20' points=' 667,773  488,773  488,772  667,772 ' rendition="default" />
+
+           <zone xml:id='l21' points=' 675,796  491,796  491,789  675,789 ' rendition="default" />
+
+           <zone xml:id='l22' points=' 671,812  487,812  487,811  671,811 ' rendition="default" />
+
+           <zone xml:id='l23' points=' 662,829  487,829  487,828  662,828 ' rendition="default" />
+
+           <zone xml:id='l24' points=' 673,849  489,849  489,845  673,845 ' rendition="default" />
+
+           <zone xml:id='l25' points=' 672,864  490,864  490,864  672,864 ' rendition="default" />
+
+           <zone xml:id='l26' points=' 674,882  485,882  485,876  674,876 ' rendition="default" />
+
+           <zone xml:id='l27' points=' 663,900  484,900  484,897  663,897 ' rendition="default" />
+
+           <zone xml:id='l28' points=' 672,917  488,917  488,913  672,913 ' rendition="default" />
+
+           <zone xml:id='l29' points=' 668,937  485,937  485,932  668,932 ' rendition="default" />
+
+           <zone xml:id='l30' points=' 663,953  486,953  486,949  663,949 ' rendition="default" />
+
+           <zone xml:id='l31' points=' 658,968  488,968  488,969  658,969 ' rendition="default" />
+
+           <zone xml:id='l32' points=' 663,985  483,985  483,987  663,987 ' rendition="default" />
+
+           <zone xml:id='l33' points=' 671,1004  485,1004  485,1002  671,1002 ' rendition="default" />
+
+           <zone xml:id='l34' points=' 667,1021  484,1021  484,1020  667,1020 ' rendition="default" />
+
+           <zone xml:id='l35' points=' 665,1039  483,1039  483,1039  665,1039 ' rendition="default" />
+
+           <zone xml:id='l36' points=' 663,1059  483,1059  483,1057  663,1057 ' rendition="default" />
+
+           <zone xml:id='l37' points=' 670,1073  486,1073  486,1073  670,1073 ' rendition="default" />
+
+           <zone xml:id='l38' points=' 667,1093  487,1093  487,1091  667,1091 ' rendition="default" />
+
+           <zone xml:id='l39' points=' 910,223  712,223  712,221  910,221 ' rendition="default" />
+
+           <zone xml:id='l40' points=' 909,245  712,245  712,241  909,241 ' rendition="default" />
+
+           <zone xml:id='l41' points=' 904,261  714,261  714,257  904,257 ' rendition="default" />
+
+           <zone xml:id='l42' points=' 907,279  712,279  712,278  907,278 ' rendition="default" />
+
+           <zone xml:id='l43' points=' 907,297  714,297  714,295  907,295 ' rendition="default" />
+
+           <zone xml:id='l44' points=' 907,315  712,315  712,313  907,313 ' rendition="default" />
+
+           <zone xml:id='l45' points=' 903,329  712,329  712,329  903,329 ' rendition="default" />
+
+           <zone xml:id='l46' points=' 911,349  715,349  715,346  911,346 ' rendition="default" />
+
+           <zone xml:id='l47' points=' 903,364  712,364  712,364  903,364 ' rendition="default" />
+
+           <zone xml:id='l48' points=' 907,381  714,381  714,381  907,381 ' rendition="default" />
+
+           <zone xml:id='l49' points=' 911,404  713,404  713,400  911,400 ' rendition="default" />
+
+           <zone xml:id='l50' points=' 907,419  714,419  714,416  907,416 ' rendition="default" />
+
+           <zone xml:id='l51' points=' 909,437  715,437  715,434  909,434 ' rendition="default" />
+
+           <zone xml:id='l52' points=' 908,455  714,455  714,457  908,457 ' rendition="default" />
+
+           <zone xml:id='l53' points=' 913,474  715,474  715,474  913,474 ' rendition="default" />
+
+           <zone xml:id='l54' points=' 910,494  715,494  715,490  910,490 ' rendition="default" />
+
+           <zone xml:id='l55' points=' 912,510  715,510  715,506  912,506 ' rendition="default" />
+
+           <zone xml:id='l56' points=' 897,527  719,527  719,526  897,526 ' rendition="default" />
+
+           <zone xml:id='l57' points=' 909,542  717,542  717,541  909,541 ' rendition="default" />
+
+           <zone xml:id='l58' points=' 906,563  715,563  715,564  906,564 ' rendition="default" />
+
+           <zone xml:id='l59' points=' 906,581  718,581  718,580  906,580 ' rendition="default" />
+
+           <zone xml:id='l60' points=' 905,600  719,600  719,596  905,596 ' rendition="default" />
+
+           <zone xml:id='l61' points=' 898,617  718,617  718,615  898,615 ' rendition="default" />
+
+           <zone xml:id='l62' points=' 908,635  715,635  715,633  908,633 ' rendition="default" />
+
+           <zone xml:id='l63' points=' 909,652  719,652  719,650  909,650 ' rendition="default" />
+
+           <zone xml:id='l64' points=' 907,670  718,670  718,665  907,665 ' rendition="default" />
+
+           <zone xml:id='l65' points=' 909,686  718,686  718,685  909,685 ' rendition="default" />
+
+           <zone xml:id='l66' points=' 905,705  717,705  717,702  905,702 ' rendition="default" />
+
+           <zone xml:id='l67' points=' 899,717  719,717  719,717  899,717 ' rendition="default" />
+
+           <zone xml:id='l68' points=' 901,737  717,737  717,733  901,733 ' rendition="default" />
+
+           <zone xml:id='l69' points=' 899,755  718,755  718,753  899,753 ' rendition="default" />
+
+           <zone xml:id='l70' points=' 916,775  715,775  715,770  916,770 ' rendition="default" />
+
+           <zone xml:id='l71' points=' 914,794  718,794  718,792  914,792 ' rendition="default" />
+
+           <zone xml:id='l72' points=' 910,813  716,813  716,809  910,809 ' rendition="default" />
+
+           <zone xml:id='l73' points=' 901,831  716,831  716,829  901,829 ' rendition="default" />
+
+           <zone xml:id='l74' points=' 908,849  719,849  719,846  908,846 ' rendition="default" />
+
+           <zone xml:id='l75' points=' 895,865  718,865  718,864  895,864 ' rendition="default" />
+
+           <zone xml:id='l76' points=' 899,882  715,882  715,879  899,879 ' rendition="default" />
+
+           <zone xml:id='l77' points=' 900,901  715,901  715,897  900,897 ' rendition="default" />
+
+           <zone xml:id='l78' points=' 903,916  717,916  717,913  903,913 ' rendition="default" />
+
+           <zone xml:id='l79' points=' 895,936  715,936  715,933  895,933 ' rendition="default" />
+
+           <zone xml:id='l80' points=' 906,951  716,951  716,951  906,951 ' rendition="default" />
+
+           <zone xml:id='l81' points=' 907,968  712,968  712,969  907,969 ' rendition="default" />
+
+           <zone xml:id='l82' points=' 916,985  717,985  717,988  916,988 ' rendition="default" />
+
+           <zone xml:id='l83' points=' 908,1007  716,1007  716,1005  908,1005 ' rendition="default" />
+
+           <zone xml:id='l84' points=' 903,1023  718,1023  718,1025  903,1025 ' rendition="default" />
+
+           <zone xml:id='l85' points=' 917,1042  715,1042  715,1041  917,1041 ' rendition="default" />
+
+           <zone xml:id='l86' points=' 715,1059  915,1059  915,1060  715,1060 ' rendition="default" />
+
+           <zone xml:id='l87' points=' 911,1075  718,1075  718,1074  911,1074 ' rendition="default" />
+
+           <zone xml:id='l88' points=' 912,1094  718,1094  718,1093  912,1093 ' rendition="default" />
+
+        </surface>
+
+        <surface>
+
+           <graphic url='lancelot_103r.jpeg' width='1024px' height='1383px' />
+
+            <zone xml:id='l89' points=' 150,218  333,218  333,216  150,216 ' rendition="default" />
+
+            <zone xml:id='l90' points=' 149,238  327,238  327,234  149,234 ' rendition="default" />
+
+            <zone xml:id='l91' points=' 332,254  151,254  151,255  332,255 ' rendition="default" />
+
+            <zone xml:id='l92' points=' 334,270  148,270  148,272  334,272 ' rendition="default" />
+
+            <zone xml:id='l93' points=' 151,291  328,291  328,287  151,287 ' rendition="default" />
+
+            <zone xml:id='l94' points=' 150,305  335,305  335,305  150,305 ' rendition="default" />
+
+            <zone xml:id='l95' points=' 151,324  335,324  335,321  151,321 ' rendition="default" />
+
+            <zone xml:id='l96' points=' 151,339  332,339  332,335  151,335 ' rendition="default" />
+
+            <zone xml:id='l97' points=' 151,356  333,356  333,353  151,353 ' rendition="default" />
+
+            <zone xml:id='l98' points=' 151,373  283,373  283,373  151,373 ' rendition="default" />
+
+            <zone xml:id='l99' points=' 200,397  333,397  333,394  200,394 ' rendition="default" />
+
+            <zone xml:id='l100' points=' 202,414  330,414  330,410  202,410 ' rendition="default" />
+
+            <zone xml:id='l101' points=' 148,433  335,433  335,430  148,430 ' rendition="default" />
+
+            <zone xml:id='l102' points=' 148,453  334,453  334,448  148,448 ' rendition="default" />
+
+            <zone xml:id='l103' points=' 149,469  335,469  335,466  149,466 ' rendition="default" />
+
+            <zone xml:id='l104' points=' 149,485  332,485  332,484  149,484 ' rendition="default" />
+
+            <zone xml:id='l105' points=' 148,505  328,505  328,498  148,498 ' rendition="default" />
+
+            <zone xml:id='l106' points=' 150,521  333,521  333,518  150,518 ' rendition="default" />
+
+            <zone xml:id='l107' points=' 148,537  334,537  334,534  148,534 ' rendition="default" />
+
+            <zone xml:id='l108' points=' 151,557  331,557  331,555  151,555 ' rendition="default" />
+
+            <zone xml:id='l109' points=' 148,573  330,573  330,570  148,570 ' rendition="default" />
+
+            <zone xml:id='l110' points=' 148,589  336,589  336,588  148,588 ' rendition="default" />
+
+            <zone xml:id='l111' points=' 148,607  332,607  332,603  148,603 ' rendition="default" />
+
+            <zone xml:id='l112' points=' 149,625  338,625  338,621  149,621 ' rendition="default" />
+
+            <zone xml:id='l113' points=' 148,642  328,642  328,638  148,638 ' rendition="default" />
+
+            <zone xml:id='l114' points=' 148,659  330,659  330,656  148,656 ' rendition="default" />
+
+            <zone xml:id='l115' points=' 150,679  343,679  343,674  150,674 ' rendition="default" />
+
+            <zone xml:id='l116' points=' 148,693  339,693  339,690  148,690 ' rendition="default" />
+
+            <zone xml:id='l117' points=' 148,711  340,711  340,708  148,708 ' rendition="default" />
+
+            <zone xml:id='l118' points=' 148,731  335,731  335,725  148,725 ' rendition="default" />
+
+            <zone xml:id='l119' points=' 146,748  344,748  344,745  146,745 ' rendition="default" />
+
+            <zone xml:id='l120' points=' 144,765  336,765  336,766  144,766 ' rendition="default" />
+
+            <zone xml:id='l121' points=' 147,785  339,785  339,784  147,784 ' rendition="default" />
+
+            <zone xml:id='l122' points=' 148,801  335,801  335,802  148,802 ' rendition="default" />
+
+            <zone xml:id='l123' points=' 147,821  332,821  332,820  147,820 ' rendition="default" />
+
+            <zone xml:id='l124' points=' 148,837  332,837  332,838  148,838 ' rendition="default" />
+
+            <zone xml:id='l125' points=' 153,855  336,855  336,853  153,853 ' rendition="default" />
+
+            <zone xml:id='l126' points=' 148,873  340,873  340,873  148,873 ' rendition="default" />
+
+            <zone xml:id='l127' points=' 148,889  340,889  340,889  148,889 ' rendition="default" />
+
+            <zone xml:id='l128' points=' 147,905  343,905  343,907  147,907 ' rendition="default" />
+
+            <zone xml:id='l129' points=' 149,926  336,926  336,925  149,925 ' rendition="default" />
+
+            <zone xml:id='l130' points=' 148,945  336,945  336,943  148,943 ' rendition="default" />
+
+            <zone xml:id='l131' points=' 148,961  333,961  333,960  148,960 ' rendition="default" />
+
+            <zone xml:id='l132' points=' 147,981  335,981  335,977  147,977 ' rendition="default" />
+
+            <zone xml:id='l133' points=' 152,997  328,997  328,993  152,993 ' rendition="default" />
+
+            <zone xml:id='l134' points=' 151,1016  335,1016  335,1011  151,1011 ' rendition="default" />
+
+            <zone xml:id='l135' points=' 150,1031  340,1031  340,1030  150,1030 ' rendition="default" />
+
+            <zone xml:id='l136' points=' 149,1050  332,1050  332,1047  149,1047 ' rendition="default" />
+
+            <zone xml:id='l137' points=' 148,1067  337,1067  337,1067  148,1067 ' rendition="default" />
+
+            <zone xml:id='l138' points=' 154,1088  334,1088  334,1086  154,1086 ' rendition="default" />
+
+            <zone xml:id='l139' points=' 383,216  561,216  561,214  383,214 ' rendition="default" />
+
+            <zone xml:id='l140' points=' 386,235  562,235  562,233  386,233 ' rendition="default" />
+
+            <zone xml:id='l141' points=' 384,254  566,254  566,250  384,250 ' rendition="default" />
+
+            <zone xml:id='l142' points=' 383,275  564,275  564,267  383,267 ' rendition="default" />
+
+            <zone xml:id='l143' points=' 381,289  565,289  565,285  381,285 ' rendition="default" />
+
+            <zone xml:id='l144' points=' 389,306  564,306  564,303  389,303 ' rendition="default" />
+
+            <zone xml:id='l145' points=' 386,325  567,325  567,321  386,321 ' rendition="default" />
+
+            <zone xml:id='l146' points=' 390,340  559,340  559,337  390,337 ' rendition="default" />
+
+            <zone xml:id='l147' points=' 388,358  560,358  560,354  388,354 ' rendition="default" />
+
+            <zone xml:id='l148' points=' 383,379  563,379  563,371  383,371 ' rendition="default" />
+
+            <zone xml:id='l149' points=' 384,393  562,393  562,393  384,393 ' rendition="default" />
+
+            <zone xml:id='l150' points=' 387,412  561,412  561,411  387,411 ' rendition="default" />
+
+            <zone xml:id='l151' points=' 386,429  564,429  564,429  386,429 ' rendition="default" />
+
+            <zone xml:id='l152' points=' 383,449  570,449  570,448  383,448 ' rendition="default" />
+
+            <zone xml:id='l153' points=' 385,467  572,467  572,464  385,464 ' rendition="default" />
+
+            <zone xml:id='l154' points=' 383,483  562,483  562,480  383,480 ' rendition="default" />
+
+            <zone xml:id='l155' points=' 384,501  567,501  567,498  384,498 ' rendition="default" />
+
+            <zone xml:id='l156' points=' 384,519  565,519  565,517  384,517 ' rendition="default" />
+
+            <zone xml:id='l157' points=' 385,534  571,534  571,533  385,533 ' rendition="default" />
+
+            <zone xml:id='l158' points=' 383,553  563,553  563,549  383,549 ' rendition="default" />
+
+            <zone xml:id='l159' points=' 388,569  560,569  560,566  388,566 ' rendition="default" />
+
+            <zone xml:id='l160' points=' 385,590  566,590  566,586  385,586 ' rendition="default" />
+
+            <zone xml:id='l161' points=' 381,605  562,605  562,601  381,601 ' rendition="default" />
+
+            <zone xml:id='l162' points=' 386,625  570,625  570,619  386,619 ' rendition="default" />
+
+            <zone xml:id='l163' points=' 383,638  572,638  572,635  383,635 ' rendition="default" />
+
+            <zone xml:id='l164' points=' 388,657  568,657  568,653  388,653 ' rendition="default" />
+
+            <zone xml:id='l165' points=' 385,675  572,675  572,667  385,667 ' rendition="default" />
+
+            <zone xml:id='l166' points=' 385,694  564,694  564,688  385,688 ' rendition="default" />
+
+            <zone xml:id='l167' points=' 383,710  566,710  566,705  383,705 ' rendition="default" />
+
+            <zone xml:id='l168' points=' 384,727  564,727  564,724  384,724 ' rendition="default" />
+
+            <zone xml:id='l169' points=' 383,745  437,745  437,744  383,744 ' rendition="default" />
+
+            <zone xml:id='l170' points=' 434,765  566,765  566,763  434,763 ' rendition="default" />
+
+            <zone xml:id='l171' points=' 434,785  559,785  559,781  434,781 ' rendition="default" />
+
+            <zone xml:id='l172' points=' 380,805  567,805  567,798  380,798 ' rendition="default" />
+
+            <zone xml:id='l173' points=' 384,821  564,821  564,819  384,819 ' rendition="default" />
+
+            <zone xml:id='l174' points=' 385,836  568,836  568,833  385,833 ' rendition="default" />
+
+            <zone xml:id='l175' points=' 384,854  560,854  560,851  384,851 ' rendition="default" />
+
+            <zone xml:id='l176' points=' 385,872  571,872  571,871  385,871 ' rendition="default" />
+
+            <zone xml:id='l177' points=' 383,892  569,892  569,887  383,887 ' rendition="default" />
+
+            <zone xml:id='l178' points=' 384,907  575,907  575,905  384,905 ' rendition="default" />
+
+            <zone xml:id='l179' points=' 385,925  571,925  571,921  385,921 ' rendition="default" />
+
+            <zone xml:id='l180' points=' 383,942  569,942  569,940  383,940 ' rendition="default" />
+
+            <zone xml:id='l181' points=' 383,962  567,962  567,957  383,957 ' rendition="default" />
+
+            <zone xml:id='l182' points=' 382,975  564,975  564,975  382,975 ' rendition="default" />
+
+            <zone xml:id='l183' points=' 384,993  565,993  565,990  384,990 ' rendition="default" />
+
+            <zone xml:id='l184' points=' 383,1013  570,1013  570,1008  383,1008 ' rendition="default" />
+
+            <zone xml:id='l185' points=' 386,1030  561,1030  561,1025  386,1025 ' rendition="default" />
+
+            <zone xml:id='l186' points=' 385,1048  560,1048  560,1045  385,1045 ' rendition="default" />
+
+            <zone xml:id='l187' points=' 380,1065  562,1065  562,1061  380,1061 ' rendition="default" />
+
+            <zone xml:id='l188' points=' 383,1079  552,1079  552,1080  383,1080 ' rendition="default" />
+
+            <zone xml:id='l190' points=' 612,212  793,212  793,209  612,209 ' rendition="default" />
+
+            <zone xml:id='l191' points=' 615,230  789,230  789,226  615,226 ' rendition="default" />
+
+            <zone xml:id='l192' points=' 615,246  812,246  812,247  615,247 ' rendition="default" />
+
+            <zone xml:id='l193' points=' 617,265  804,265  804,265  617,265 ' rendition="default" />
+
+            <zone xml:id='l194' points=' 615,285  808,285  808,279  615,279 ' rendition="default" />
+
+            <zone xml:id='l195' points=' 614,305  806,305  806,301  614,301 ' rendition="default" />
+
+            <zone xml:id='l196' points=' 614,318  801,318  801,317  614,317 ' rendition="default" />
+
+            <zone xml:id='l197' points=' 614,338  799,338  799,333  614,333 ' rendition="default" />
+
+            <zone xml:id='l198' points=' 616,355  809,355  809,350  616,350 ' rendition="default" />
+
+            <zone xml:id='l199' points=' 613,373  792,373  792,368  613,368 ' rendition="default" />
+
+            <zone xml:id='l200' points=' 615,395  813,395  813,388  615,388 ' rendition="default" />
+
+            <zone xml:id='l201' points=' 612,410  808,410  808,408  612,408 ' rendition="default" />
+
+            <zone xml:id='l202' points=' 615,434  791,434  791,425  615,425 ' rendition="default" />
+
+            <zone xml:id='l203' points=' 616,448  813,448  813,445  616,445 ' rendition="default" />
+
+            <zone xml:id='l204' points=' 614,465  805,465  805,459  614,459 ' rendition="default" />
+
+            <zone xml:id='l205' points=' 616,480  807,480  807,477  616,477 ' rendition="default" />
+
+            <zone xml:id='l206' points=' 609,499  804,499  804,495  609,495 ' rendition="default" />
+
+            <zone xml:id='l207' points=' 612,516  808,516  808,513  612,513 ' rendition="default" />
+
+            <zone xml:id='l208' points=' 615,536  801,536  801,529  615,529 ' rendition="default" />
+
+            <zone xml:id='l209' points=' 615,553  803,553  803,547  615,547 ' rendition="default" />
+
+            <zone xml:id='l210' points=' 614,566  812,566  812,565  614,565 ' rendition="default" />
+
+            <zone xml:id='l211' points=' 615,581  807,581  807,584  615,584 ' rendition="default" />
+
+            <zone xml:id='l212' points=' 611,601  807,601  807,596  611,596 ' rendition="default" />
+
+            <zone xml:id='l213' points=' 618,618  802,618  802,615  618,615 ' rendition="default" />
+
+            <zone xml:id='l214' points=' 612,637  810,637  810,633  612,633 ' rendition="default" />
+
+            <zone xml:id='l215' points=' 619,653  812,653  812,648  619,648 ' rendition="default" />
+
+            <zone xml:id='l216' points=' 621,670  812,670  812,667  621,667 ' rendition="default" />
+
+            <zone xml:id='l217' points=' 665,688  814,688  814,685  665,685 ' rendition="default" />
+
+            <zone xml:id='l218' points=' 664,704  808,704  808,700  664,700 ' rendition="default" />
+
+            <zone xml:id='l219' points=' 613,725  823,725  823,721  613,721 ' rendition="default" />
+
+            <zone xml:id='l220' points=' 612,745  811,745  811,740  612,740 ' rendition="default" />
+
+            <zone xml:id='l221' points=' 608,764  808,764  808,761  608,761 ' rendition="default" />
+
+            <zone xml:id='l222' points=' 612,785  806,785  806,781  612,781 ' rendition="default" />
+
+            <zone xml:id='l223' points=' 611,799  792,799  792,794  611,794 ' rendition="default" />
+
+            <zone xml:id='l224' points=' 615,816  809,816  809,813  615,813 ' rendition="default" />
+
+            <zone xml:id='l225' points=' 612,837  798,837  798,829  612,829 ' rendition="default" />
+
+            <zone xml:id='l226' points=' 611,852  797,852  797,849  611,849 ' rendition="default" />
+
+            <zone xml:id='l227' points=' 612,872  794,872  794,866  612,866 ' rendition="default" />
+
+            <zone xml:id='l228' points=' 607,881  800,881  800,882  607,882 ' rendition="default" />
+
+            <zone xml:id='l229' points=' 607,900  801,900  801,899  607,899 ' rendition="default" />
+
+            <zone xml:id='l230' points=' 610,921  812,921  812,918  610,918 ' rendition="default" />
+
+            <zone xml:id='l231' points=' 616,939  808,939  808,937  616,937 ' rendition="default" />
+
+            <zone xml:id='l232' points=' 604,957  796,957  796,957  604,957 ' rendition="default" />
+
+            <zone xml:id='l233' points=' 612,975  816,975  816,969  612,969 ' rendition="default" />
+
+            <zone xml:id='l234' points=' 614,990  804,990  804,990  614,990 ' rendition="default" />
+
+            <zone xml:id='l235' points=' 610,1005  808,1005  808,1002  610,1002 ' rendition="default" />
+
+            <zone xml:id='l236' points=' 611,1018  804,1018  804,1022  611,1022 ' rendition="default" />
+
+            <zone xml:id='l237' points=' 612,1041  801,1041  801,1036  612,1036 ' rendition="default" />
+
+            <zone xml:id='l238' points=' 607,1059  810,1059  810,1056  607,1056 ' rendition="default" />
+
+            <zone xml:id='l239' points=' 616,1081  812,1081  812,1075  616,1075 ' rendition="default" />
+
+        </surface>
+
+        <surface>
+
+           <graphic url='lancelot_103v.jpeg' width='1024px' height='1387px' />
+
+           <zone xml:id='l240' points=' 238,218  423,218  423,218  238,218 ' rendition="default" />
+
+           <zone xml:id='l241' points=' 236,237  422,237  422,237  236,237 ' rendition="default" />
+
+           <zone xml:id='l242' points=' 239,253  423,253  423,254  239,254 ' rendition="default" />
+
+           <zone xml:id='l243' points=' 239,272  427,272  427,270  239,270 ' rendition="default" />
+
+           <zone xml:id='l244' points=' 239,290  419,290  419,290  239,290 ' rendition="default" />
+
+           <zone xml:id='l245' points=' 243,309  431,309  431,308  243,308 ' rendition="default" />
+
+           <zone xml:id='l246' points=' 244,326  430,326  430,326  244,326 ' rendition="default" />
+
+           <zone xml:id='l247' points=' 243,343  431,343  431,342  243,342 ' rendition="default" />
+
+           <zone xml:id='l248' points=' 243,358  435,358  435,359  243,359 ' rendition="default" />
+
+           <zone xml:id='l249' points=' 243,377  430,377  430,378  243,378 ' rendition="default" />
+
+           <zone xml:id='l250' points=' 246,399  429,399  429,396  246,396 ' rendition="default" />
+
+           <zone xml:id='l251' points=' 245,416  430,416  430,418  245,418 ' rendition="default" />
+
+           <zone xml:id='l252' points=' 247,436  431,436  431,437  247,437 ' rendition="default" />
+
+           <zone xml:id='l253' points=' 244,452  431,452  431,455  244,455 ' rendition="default" />
+
+           <zone xml:id='l254' points=' 244,471  430,471  430,471  244,471 ' rendition="default" />
+
+           <zone xml:id='l255' points=' 244,489  433,489  433,489  244,489 ' rendition="default" />
+
+           <zone xml:id='l256' points=' 244,506  432,506  432,509  244,509 ' rendition="default" />
+
+           <zone xml:id='l257' points=' 242,527  431,527  431,526  242,526 ' rendition="default" />
+
+           <zone xml:id='l258' points=' 245,546  427,546  427,549  245,549 ' rendition="default" />
+
+           <zone xml:id='l259' points=' 245,562  427,562  427,562  245,562 ' rendition="default" />
+
+           <zone xml:id='l260' points=' 247,580  430,580  430,579  247,579 ' rendition="default" />
+
+           <zone xml:id='l261' points=' 246,596  430,596  430,593  246,593 ' rendition="default" />
+
+           <zone xml:id='l262' points=' 243,614  428,614  428,610  243,610 ' rendition="default" />
+
+           <zone xml:id='l263' points=' 245,629  431,629  431,628  245,628 ' rendition="default" />
+
+           <zone xml:id='l264' points=' 242,643  439,643  439,646  242,646 ' rendition="default" />
+
+           <zone xml:id='l265' points=' 243,662  431,662  431,662  243,662 ' rendition="default" />
+
+           <zone xml:id='l266' points=' 244,676  433,676  433,679  244,679 ' rendition="default" />
+
+           <zone xml:id='l267' points=' 247,697  429,697  429,694  247,694 ' rendition="default" />
+
+           <zone xml:id='l268' points=' 245,716  442,716  442,714  245,714 ' rendition="default" />
+
+           <zone xml:id='l269' points=' 250,733  423,733  423,732  250,732 ' rendition="default" />
+
+           <zone xml:id='l270' points=' 243,753  427,753  427,752  243,752 ' rendition="default" />
+
+           <zone xml:id='l271' points=' 247,773  448,773  448,774  247,774 ' rendition="default" />
+
+           <zone xml:id='l272' points=' 245,792  437,792  437,791  245,791 ' rendition="default" />
+
+           <zone xml:id='l273' points=' 247,810  440,810  440,810  247,810 ' rendition="default" />
+
+           <zone xml:id='l274' points=' 248,827  436,827  436,827  248,827 ' rendition="default" />
+
+           <zone xml:id='l275' points=' 247,846  440,846  440,844  247,844 ' rendition="default" />
+
+           <zone xml:id='l276' points=' 249,860  443,860  443,862  249,862 ' rendition="default" />
+
+           <zone xml:id='l277' points=' 249,879  441,879  441,878  249,878 ' rendition="default" />
+
+           <zone xml:id='l278' points=' 249,898  447,898  447,899  249,899 ' rendition="default" />
+
+           <zone xml:id='l279' points=' 251,917  447,917  447,917  251,917 ' rendition="default" />
+
+           <zone xml:id='l280' points=' 249,937  446,937  446,939  249,939 ' rendition="default" />
+
+           <zone xml:id='l281' points=' 250,953  442,953  442,954  250,954 ' rendition="default" />
+
+           <zone xml:id='l282' points=' 251,970  430,970  430,969  251,969 ' rendition="default" />
+
+           <zone xml:id='l283' points=' 249,986  443,986  443,988  249,988 ' rendition="default" />
+
+           <zone xml:id='l284' points=' 252,1001  439,1001  439,1006  252,1006 ' rendition="default" />
+
+           <zone xml:id='l285' points=' 340,1020  252,1020  252,1020  340,1020 ' rendition="default" />
+        </surface>
+     </facsimile>
+
+   <text type="edition">
+     <body xml:lang="fr">
+            <p>
+              <cb/>
+
+                     <lb facs="#l1"/><g type="initiale" rend="color:purple size(2lines)">L</g>En demain <choice><abbr>revit</abbr><expan>revi<ex>n</ex>t</expan></choice>
+                     <lb facs="#l2"/><persName ref="#Dame-de-Rohestoc">la dame</persName> acourt
+                     <lb facs="#l3"/>et la <persName ref="#Guenievre">royne</persName> li prie de re
+                     <lb facs="#l4"/>manoir oiant toute
+                     <lb facs="#l5"/>sa gente mais ele dit
+                     <lb facs="#l6"/>que ce ne puet estre a
+                     <lb facs="#l7"/>tant se lievent. Et li
+                     <lb facs="#l8"/><persName ref="#Artus">roys</persName> saut a l en contre
+                     <lb facs="#l9"/>et prent <persName ref="#Dame-de-Rohestoc">la dame</persName> ro
+                     <lb facs="#l10"/>hestoc par la main. Et
+                     <lb facs="#l11"/>la <persName ref="#Guenievre">royne</persName> prent l amie
+                     <lb facs="#l12"/><persName ref="#Hestor">Hestor</persName> si li dist. Se vous
+                     <lb facs="#l13"/>ne m aidiez fait ele &vostre;
+                     <lb facs="#l14"/><persName ref="#Dame-de-Rohestoc">dame</persName>acouchier ie ne
+                     <lb facs="#l15"/>vous amerai jamais.
+                     <lb facs="#l16"/><persName ref="#Dame-de-Rohestoc">Dame</persName> fait ele c&omme;
+                     <lb facs="#l17"/>Ele ma fait ele requi
+                     <lb facs="#l18"/>se que ie ne prie pour
+                     <lb facs="#l19"/>le <persName ref="#Groadain">nain</persName> mais si ferai
+                     <lb facs="#l20"/>et ele audera que ie la
+                     <lb facs="#l21"/>prie de remanoir mais
+                     <lb facs="#l22"/>ie ferai que li <persName ref="#Groadain">nains</persName>
+                     <lb facs="#l23"/>sera delivres relachiez
+                     <lb facs="#l24"/>ha : dame fait la puce
+                     <lb facs="#l25"/>le comme avez oze &bien;
+                     <lb facs="#l26"/>dist.Atant senuont
+                     <lb facs="#l27"/>asseoir Et la <persName ref="#Guenievre">royne</persName> dist
+                     <lb facs="#l28"/> a <persName ref="#Dame-de-Rohestoc">la dame de Rohestoc</persName> &que;
+                     <lb facs="#l29"/>elle li doinst – i – don da
+                     <lb facs="#l30"/>me fait ele ne me de
+                     <lb facs="#l31"/>mandez pas outrage.
+                     <lb facs="#l32"/>Car nez ci une damoise
+                     <lb facs="#l33"/>le qui <choice><abbr>mlt</abbr><expan>m<ex>ou</ex>lt</expan></choice>a a faire en
+                     <lb facs="#l34"/>son pays ne vous esma
+                     <lb facs="#l35"/>iez mie fait la <persName ref="#Guenievre">royne</persName> &que;
+                     <lb facs="#l36"/>vous ne savez que ie veul
+                     <lb facs="#l37"/> demander &et; la dame si
+            </p>
+            <p>
+
+
+             <cb/>
+
+                     <lb facs="#l38"/>dit quele l otroiera se la
+                     <lb facs="#l39"/>demoisele  l otroie <choice><abbr>ava</abbr><expan>ava<ex>n</ex>t</expan></choice>
+                     <lb facs="#l40"/>et la <persName ref="#Guenievre">royne</persName> le fait otroier
+                     <lb facs="#l41"/>a la damoisele et puis <choice><abbr>e</abbr><expan>e<ex>m</ex></expan></choice>
+                     <lb facs="#l42"/>prent la foy de l une &et; de
+                     <lb facs="#l43"/>l autre. Savez vous fait
+                     <lb facs="#l44"/>la <persName ref="#Guenievre">royne</persName> que vous m a
+                     <lb facs="#l45"/>vez donne que vous m a
+                     <lb facs="#l46"/>vez otroie que li <persName ref="#Groadain">nains</persName>
+                     <lb facs="#l47"/>sera delivres &et; quites du
+                     <lb facs="#l48"/>mautalent et que vous avez
+                     <lb facs="#l49"/>vers li. &et; vous damoise
+                     <lb facs="#l50"/>le m avez creante que <choice><abbr>v</abbr><expan>v<ex>ous</ex></expan></choice>
+                     <lb facs="#l51"/>prierois <persName ref="#Hestor">Hestor</persName> qu il voit
+                     <lb facs="#l52"/>querre le a&moult; tant qu il
+                     <lb facs="#l53"/>le truisse. Et tant feroiz
+                     <lb facs="#l54"/>qu il y va. Quant ele l oc
+                     <lb facs="#l55"/>si est si esbahie quele
+                     <lb facs="#l56"/>puet dire mot d une
+                     <lb facs="#l57"/>grant piece. Et tuit cil
+                     <lb facs="#l58"/>qui loirent en sont lie
+                     <lb facs="#l59"/>mais <persName ref="#Dame-de-Rohestoc">la dame</persName> de Rohes
+                     <lb facs="#l60"/>toc en est lie soz touz
+                     <lb facs="#l61"/>Et quant ele put parler
+                     <lb facs="#l62"/>si dist he: <persName ref="#Guenievre">dame royne</persName>.
+                     <lb facs="#l63"/>Certes il n a pas tant de
+                     <lb facs="#l64"/>bonte en vous que l en tes
+                     <lb facs="#l65"/>moigne. Et &moult; avez
+                     <lb facs="#l66"/>oze <choice><abbr>pou</abbr><expan>pou<ex>r</ex></expan></choice> gaaignie en
+                     <lb facs="#l67"/>une pucele de ce voir
+                     <lb facs="#l68"/>Et ne pour&que;nt de ce ne
+                     <lb facs="#l69"/>m avez vous mie courou
+                     <lb facs="#l70"/>ciee. Car au iour ne m a
+                     <lb facs="#l71"/>ist ia diex que ie li prie
+                     <lb facs="#l72"/>rai qu il y aille ne par
+                     <lb facs="#l73"/>les sainz de cele chapele
+                     <lb facs="#l74"/>se nul en y a ainz me
+                     <lb facs="#l75"/>lairoie toute desmem
+                     <lb facs="#l76"/>brer Certes fait la roy
+                     <lb facs="#l77"/>ne ie le croi &bien; dont ne
+                     <lb facs="#l78"/>seriez vous pas niece
+                     <lb facs="#l79"/>au <persName ref="#Groadain">nain</persName> se vous n esties
+                     <lb facs="#l80"/>plus felonesse que au
+                     <lb facs="#l81"/>tre femme. Et &bien; sachiez
+                     <lb facs="#l82"/>que pour mon seig
+                     <lb facs="#l83"/>nour le <persName ref="#Artus">roy</persName> n en ceste
+                     <lb facs="#l84"/>dame qui ci est ne tendrez
+                     <lb facs="#l85"/>vous iamais terre <choice><abbr>devat</abbr><expan>deva<ex>n</ex>t</expan></choice>
+                     <lb facs="#l86"/>que cis counans sera te
+                     <lb facs="#l87"/>nus dame fait ele ie ne
+
+
+            </p>
+            <pb/>
+               <p>
+               <cb/>
+
+
+                        <lb facs="#l88"/>puis mais dont ne serai
+                        <lb facs="#l89"/>ie iamais tenans. Car
+                        <lb facs="#l90"/>ce sera a faire au jour
+                        <lb facs="#l91"/>de huyse Gardez fait la
+                        <lb facs="#l92"/><persName ref="#Guenievre">royne</persName> que vous n en fa
+                        <lb facs="#l93"/>ciez ia riens se par force
+                        <lb facs="#l94"/>non. mais toutes voies
+                        <lb facs="#l95"/>le ferez vous mais que
+                        <lb facs="#l96"/>bien vous anuit &et; guiet
+                        <lb facs="#l97"/>Certes oz y parra
+                        <lb facs="#l98"/><g type="initiale" rend="color: purple">A</g>
+                        <lb facs="#l99"/>vant se lieve la
+                        <lb facs="#l100"/><persName ref="#Guenievre">royne</persName> &et; dist a la
+                        <lb facs="#l101"/><persName ref="#Dame-de-Rohestoc">dame de rohestoc</persName> que si
+                        <lb facs="#l102"/>chier comme elle a son
+                        <lb facs="#l103"/>cors qu elle n ait baillie
+                        <lb facs="#l104"/>de riens qui soit en son
+                        <lb facs="#l105"/>pooir soz le sairement
+                        <lb facs="#l106"/>&et; soz la feaute que ele
+                        <lb facs="#l107"/>doit au <persName ref="#Artus">roy artus</persName> au fe
+                        <lb facs="#l108"/>me ele est. Et la dame
+                        <lb facs="#l109"/>li octroie faisant sam
+                        <lb facs="#l110"/>blant d estre courouciee
+                        <lb facs="#l111"/>mais non est. Et en a
+                        <lb facs="#l112"/>pres si dist la <persName ref="#Guenievre">royne</persName> au
+                        <lb facs="#l113"/><persName ref="#Groadain">nain</persName> que de tout soit
+                        <lb facs="#l114"/>saisiz et que bien sache
+                        <lb facs="#l115"/>il que se ele se pariurroit
+                        <lb facs="#l116"/>quele la courouceroit
+                        <lb facs="#l117"/>si qu il ne li remaindroit
+                        <lb facs="#l118"/>ne terre ne roie a tant
+                        <lb facs="#l119"/>s en ist la damoisele &moult;
+                        <lb facs="#l120"/>courouciee de la cham
+                        <lb facs="#l121"/>bre et pleure &moult; dure
+                        <lb facs="#l122"/>ment Et en contre hes
+                        <lb facs="#l123"/>tor son ami en son ve
+                        <lb facs="#l124"/>nir et cil li demande qu
+                        <lb facs="#l125"/>elle a et cele ne le voult
+                        <lb facs="#l126"/>dire fors tant que a soi
+                        <lb facs="#l127"/>meisines dist en alant
+                        <lb facs="#l128"/>ha :lasse tant me deceu
+                        <lb facs="#l129"/>cele qui tout decoit ne
+                        <lb facs="#l130"/>plus n’en pot traire hes
+                        <lb facs="#l131"/>tor pour priere qu il li
+                        <lb facs="#l132"/>face si le suit en tele
+                        <lb facs="#l133"/>guise iusqua son hos
+                        <lb facs="#l134"/>tel et ele s est couchiee
+                        <lb facs="#l135"/>en .i. lit et fait tel duel
+                        <lb facs="#l136"/>que nulz n en puet pour
+                        <lb facs="#l137"/>le traire Quant <persName ref="#Hestor">hestor</persName>
+                        <lb facs="#l138"/>voit qu elle ne li dist la
+
+               </p>
+               <p>
+               <cb/>
+
+                        <lb facs="#l139"/>choison de son duel si
+                        <lb facs="#l140"/>vient au <persName ref="#Groadain">nain</persName> &et; li de
+                        <lb facs="#l141"/>mande que ce est et li
+                        <lb facs="#l142"/><persName ref="#Groadain">nains</persName> li conte la verite
+                        <lb facs="#l143"/>&et; le sairement qu ele a
+                        <lb facs="#l144"/>fait ha : pour dieu fet
+                        <lb facs="#l145"/><persName ref="#Hestor">hestor</persName> alons a lui et si
+                        <lb facs="#l146"/>li prions que gi aille
+                        <lb facs="#l147"/>car sanz commande
+                        <lb facs="#l148"/>ment y voie ie aincois
+                        <lb facs="#l149"/>quelle y perdist riens
+                        <lb facs="#l150"/>de sa terre se ie ne coi
+                        <lb facs="#l151"/>doie la haine avoir &et;
+                        <lb facs="#l152"/>ie vous pri pour vostre
+                        <lb facs="#l153"/>preu &et; pour le sien que
+                        <lb facs="#l154"/>vous li priez <choice><abbr>autrem</abbr><expan>autrem<ex>ent</ex></expan></choice>
+                        <lb facs="#l155"/>comme ie ferai qu elle
+                        <lb facs="#l156"/>sueffre que gi aille <choice><abbr>p</abbr><expan>p<ex>ar</ex></expan></choice>
+                        <lb facs="#l157"/>sa priere pour ce que la
+                        <lb facs="#l158"/><persName ref="#Guenievre">royne</persName> le veult ainssi.
+                        <lb facs="#l159"/>et ele m en priera des &que;
+                        <lb facs="#l160"/>ie la verrai si comme ie
+                        <lb facs="#l161"/>cuit Et li <persName ref="#Groadain">nains</persName> dist
+                        <lb facs="#l162"/>que il est tout prest que
+                        <lb facs="#l163"/>il l enclinent au dui au
+                        <lb facs="#l164"/>piez mais ie le sent fait
+                        <lb facs="#l165"/>il a si felonnesse que a
+                        <lb facs="#l166"/> grant paine le fera puis
+                        <lb facs="#l167"/>quelle si est a hurtee si
+                        <lb facs="#l168"/>y essaierons nous fait
+                        <lb facs="#l169"/><persName ref="#Hestor">hestor</persName>.
+                        <lb facs="#l170"/><g type="initiale" rend="color: purple">A</g>utant viennent
+                        <lb facs="#l171"/>audui a l ostel
+                        <lb facs="#l172"/>a la damoisele si s age
+                        <lb facs="#l173"/>nouillent  devant son
+                        <lb facs="#l174"/>lit ou ele gisoit &moult;
+                        <lb facs="#l175"/>dolante &et; &moult; courou
+                        <lb facs="#l176"/>ciee si li prient por dieu
+                        <lb facs="#l177"/>que <persName ref="#Hestor">hestor</persName> aille en cele
+                        <lb facs="#l178"/>queste. fi fait ele au <persName ref="#Groadain">nai</persName>
+                        <lb facs="#l179"/>avez me vous priere fai
+                        <lb facs="#l180"/>te de ce que la <persName ref="#Guenievre">royne</persName> m a
+                        <lb facs="#l181"/>fait creanter. Certes ia
+                        <lb facs="#l182"/>proiere m auroiz. Car ia
+                        <lb facs="#l183"/>ne m aist diex quant ia
+                        <lb facs="#l184"/><persName ref="#Hestor">hestor</persName> en aura par moi
+                        <lb facs="#l185"/>priere ne <choice><abbr>comandemet</abbr><expan>co<ex>m</ex>mandeme<ex>n</ex>t</expan></choice>
+                        <lb facs="#l186"/>et se il y aloit sanz mon
+                        <lb facs="#l187"/>congie &bien; sache il de
+                        <lb facs="#l188"/>voir que il ne me rer
+
+
+               </p>
+               <p>
+               <cb/>
+
+                        <lb facs="#l189"/>voit iamais vive. Et
+                        <lb facs="#l190"/>quant il loient sien
+                        <lb facs="#l191"/>sont &moult; a malaise sise ?
+                        <lb facs="#l192"/>renait li <persName ref="#Groadain">nains</persName> &et; vient
+                        <lb facs="#l193"/>arrieres a la dame <choice><abbr>devat</abbr><expan>deva<ex>n</ex>t</expan></choice>
+                        <lb facs="#l194"/>la <persName ref="#Guenievre">royne</persName> &et; lor conte com
+                        <lb facs="#l195"/>ment sa niece fait <choice><abbr>grt</abbr><expan>gr<ex>en</ex>t</expan></choice>
+                        <lb facs="#l196"/>duel &et; dit que ia <persName ref="#Hestor">hestor</persName>
+                        <lb facs="#l197"/>n aura son <choice><abbr>commandemt</abbr><expan>commandem<ex>en</ex>t</expan></choice>
+                        <lb facs="#l198"/>ne sa priere &et; s il y vait
+                        <lb facs="#l199"/>sanz son congie il ne la
+                        <lb facs="#l200"/>verra iamais. Quant la
+                        <lb facs="#l201"/><persName ref="#Guenievre">royne</persName> l entent s il en re
+                        <lb facs="#l202"/>prent &moult; &grant; angoisse
+                        <lb facs="#l203"/>a son cuer car &bien; scet &que;
+                        <lb facs="#l204"/>grant angoisse a la da
+                        <lb facs="#l205"/>moisele a son cuer s il <choice><abbr>e</abbr><expan>e<ex>n</ex></expan></choice>
+                        <lb facs="#l206"/>voie querre par la dame
+                        <lb facs="#l207"/>de malehaut qui dure
+                        <lb facs="#l208"/>ment le tint a conseil
+                        <lb facs="#l209"/>que ele l aist aller <persName ref="#Hestor">hestor</persName>
+                        <lb facs="#l210"/>en la queste car il ne de
+                        <lb facs="#l212"/>mourra mie Certes fet
+                        <lb facs="#l213"/>li <persName ref="#Groadain">nains</persName> il y last <choice><abbr>mlt</abbr><expan>m<ex>ou</ex>lt</expan></choice>
+                        <lb facs="#l214"/>volentiers s elle ne li eust
+                        <lb facs="#l215"/>desfendu mais il l aime
+                        <lb facs="#l216"/>et doute loz toutes ries ?
+                        <lb facs="#l217"/><g type="initiale" rend="color: purple">L</g>ors vait la dame
+                        <lb facs="#l218"/>de malehaut a la
+                        <lb facs="#l219"/>damoisele parler si l amai
+                        <lb facs="#l220"/>ne a la <persName ref="#Guenievre">royne</persName> <choice><abbr>mlt</abbr><expan>m<ex>ou</ex>lt</expan></choice>angois
+                        <lb facs="#l221"/>seuse et &moult; li amonnes
+                        <lb facs="#l222"/>te et loe que ele l aist a
+                        <lb facs="#l223"/>ler <persName ref="#Hestor">hestor</persName> en la queste
+                        <lb facs="#l224"/>du &chevalier; car il ne demou
+                        <lb facs="#l225"/>ra mie granment. Et
+                        <lb facs="#l226"/>cele ne li otroie ne ne
+                        <lb facs="#l227"/>li escondit. mais toutes
+                        <lb facs="#l228"/>voies esconte. ainssi vien
+                        <lb facs="#l229"/>nent iusqu a la court &et;
+                        <lb facs="#l230"/>la <persName ref="#Guenievre">royne</persName> la veult <choice><abbr>mlt</abbr><expan>m<ex>ou</ex>lt</expan></choice> &bien;
+                        <lb facs="#l231"/>veoir pour  ce que ele scet
+                        <lb facs="#l232"/>grant partie du mal <choice><abbr>q</abbr><expan>q<ex>ue</ex></expan></choice>
+                        <lb facs="#l233"/>elle a. si la prent entre ses
+                        <lb facs="#l234"/>braz &et; dist damoisele ne
+                        <lb facs="#l235"/>vous esmaiez mie mais
+                        <lb facs="#l236"/>confortez vous &et; se dieu
+                        <lb facs="#l237"/>plaist nous orrons par
+                        <lb facs="#l238"/>tans ce que li cuers nous
+                        <lb facs="#l239"/>a dit  A tant fist la puce
+
+               </p>
+               <p>
+
+              <cb/>
+
+                     <lb facs="#l240"/>le assir si li prie la <persName ref="#Guenievre">royne</persName>
+                     <lb facs="#l241"/>qu ele prie <persName ref="#Hestor">hestor</persName> que
+                     <lb facs="#l242"/>il aille en cele queste por
+                     <lb facs="#l243"/>delivrer son oncle le <persName ref="#Groadain"><choice><abbr>nai</abbr><expan>nai<ex>n</ex></expan></choice></persName>
+                     <lb facs="#l244"/>mais ele ne li puet en
+                     <lb facs="#l245"/>core otroier A ces paroles
+                     <lb facs="#l246"/>entra laiens un &chevalier; ar
+                     <lb facs="#l247"/>me de toutes armes une
+                     <lb facs="#l248"/>damoisele o lui &moult; bele
+                     <lb facs="#l249"/>si portoit la damoisele
+                     <lb facs="#l250"/>i. escu a son col ce desus
+                     <lb facs="#l251"/>desouz Car li &chevalier; n el
+                     <lb facs="#l252"/>pooit porter pource qu il
+                     <lb facs="#l253"/>avoit le bras brisie entre
+                     <lb facs="#l254"/>le couste &et; la main Si
+                     <lb facs="#l255"/>l avoit lie d asteles au
+                     <lb facs="#l256"/>miex qu il pooit parmi
+                     <lb facs="#l257"/>tout ce avoit tel dolour
+                     <lb facs="#l258"/>des os qui hurtoient en
+                     <lb facs="#l259"/>samble que par vu  pou
+                     <lb facs="#l260"/>qu il ne se paumoit li
+                     <lb facs="#l261"/>&chevalier; descent en la court
+                     <lb facs="#l262"/>si fu assez qui li aida &et;
+                     <lb facs="#l263"/>la damoisele et aussi y
+                     <lb facs="#l264"/>firrent descendu li <choice><abbr>dema</abbr><expan>dema<ex>n</ex></expan></choice>
+                     <lb facs="#l265"/>de li &chevalier; ou la <persName ref="#Guenievre">royne</persName>
+                     <lb facs="#l266"/>estoit et il fu assez qui
+                     <lb facs="#l267"/>la en seigna. Car chas
+                     <lb facs="#l268"/>cuns couru en tour eulz
+                     <lb facs="#l269"/>que pour veir le &chevalier;
+                     <lb facs="#l270"/>blecie que pour veoir
+                     <lb facs="#l271"/>la damoisele a l escu <choice><abbr>qut</abbr><expan>qu<ex>an</ex>t</expan></choice>
+                     <lb facs="#l272"/>li &chevalier; fu devant la roy
+                     <lb facs="#l273"/>ne il le salue premiere
+                     <lb facs="#l274"/>ment de par un &chevalier; qui
+                     <lb facs="#l275"/>vous aime plus que vous
+                     <lb facs="#l276"/>ne faites lui Si vous man
+                     <lb facs="#l277"/>de que vous li feistes .i.
+                     <lb facs="#l278"/>demi servise que li peus
+                     <lb facs="#l279"/>siez bien avoir fait tot
+                     <lb facs="#l280"/>entier. Et pource si voit
+                     <lb facs="#l281"/>qu il ne vous endoit <choice><abbr>q</abbr><expan>q<ex>ue</ex></expan></choice>
+                     <lb facs="#l282"/>demi guerre don &et; il le
+                     <lb facs="#l283"/>vous rendra el premier
+                     <lb facs="#l284"/>lieu ou il le porra guer
+                     <lb facs="#l285"/>re donner.
+               </p>
+
+
+            </body>
+        </text>
+
+</TEI>

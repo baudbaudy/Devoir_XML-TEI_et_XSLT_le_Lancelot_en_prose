@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- développement des lettres avec signes d'abréviation -->
+<!ENTITY an "<choice><abbr>&#257;</abbr><expan>an</expan></choice>" >
+<!ENTITY com "<choice><abbr>&#42863;</abbr><expan>com</expan></choice>" >
+<!ENTITY en "<choice><abbr>&#x113;</abbr><expan>en</expan></choice>" >
+<!ENTITY et "<choice><abbr>&#x204a;</abbr><expan> et </expan></choice>" >
+<!ENTITY om "<choice><abbr>&#333;</abbr><expan>om</expan></choice>" >
+<!ENTITY on "<choice><abbr>&#333;</abbr><expan>on</expan></choice>" >
+
+<!-- développement de mot sans abbréviation -->
+<!ENTITY moult "<choice><abbr>mlt</abbr><expan>m<ex>o</ex>lt</expan></choice>">
+
+<!-- Entitées pour des rétablir des mots abbrégés -->
+<!ENTITY bien "<choice><abbr>b&#241;</abbr><expan>bien</expan></choice>" >
+<!ENTITY chevalier "<choice><abbr>chl&#345;</abbr><expan>chevalier</expan></choice>" >
+<!ENTITY grant "<choice><abbr>g&#241;t</abbr><expan>grant</expan></choice>" >
+<!ENTITY que "<choice><abbr>&#xA757;</abbr><expan>que</expan></choice>">
+<!ENTITY vostre "<choice><abbr>v&#345;e</abbr><expan>vostre</expan></choice>" >
+
+
+
+<!ELEMENT lb (#PCDATA)>
+<!ELEMENT persname (#PCDATA) >
+<!ELEMENT g (#PCDATA) >
+
+
+
+<!ATTLIST lb facs CDATA #REQUIRED>
+<!ATTLIST persname ref CDATA #REQUIRED>
+<!ATTLIST  g type CDATA #REQUIRED>
+<!ATTLIST  g rend CDATA #REQUIRED>

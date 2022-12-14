@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en"
+   xmlns:nt="http://www.exemple.com/ns/nonTEI">
+   <teiHeader>
+
+      <fileDesc>
+         <titleStmt>
+            <title>Edition du manuscrit numérisé sur Gallica de la première partie
+               du roman en prose de Lancelot du Lac, de GAUTIER MAP</title>
+            <author>
+               <persName xml:id="BD">
+                  <forename>Baudoin</forename>
+                  <surname>Davoury</surname>
+               </persName>
+            </author>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Edition par l'Ecole nationale des Chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="2022-02">février 2022</date>
+         </publicationStmt>
+
+         <sourceDesc>
+            <p>Travail d'encodage réalisé à partir du manuscrit nuùérisé sur le site Gallica,
+               la bliothèque numérique de la BNF <graphic url="https://gallica.bnf.fr/ark:/12148/btv1b6000418r/f216.item"></graphic>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+
+   </teiHeader>
+
+
+   <text>
+      <body>
+
+         <!-- DOCUMENTATION -->
+
+         <div1>
+            <head>Guide à l'encodage de l'éditon numérique du roman de "Lancelot en prose"</head>
+
+               <p>Ce guide doit servir à détailler les les règles d'encodage et de balisage à appliquer
+                  pour une partie du manuscrit numérisé du "Lancelot en prose",
+                  à savoir les<locus from="102v" to="103v">folio 102v à 103v.</locus>
+               </p>
+
+
+
+         <div2>
+
+            <head>Organisation du fichier XML-TEI</head>
+            <p>
+               Un encodage au format XML-TEI des <locus from="102v" to="103v">folio 102v à 103v</locus> a été réalisé.
+               Le document est contenu dans un élément racine <gi>TEI</gi> et divisé en trois parties:
+
+               <seg>
+                  Un élément <gi>teiHeader</gi> qui compile l'ensemble des métadonnées, c'est-à-dire toutes
+                  les informations disponibles sur l'objet d'étude, ici un manuscrit de la BNF
+                  et les informations sur le travail d'encodage exécuté.
+                  La balise <gi>teiHeader</gi> contient donc une balises <gi>filedesc</gi> donnant une description
+                  bibliogrpahique du fichier dont les informations suivantes: la cote et les identifiants
+                  de l'ouvrage, sa date d'édition, son auteur, sa description physique précise. Par ailleurs, nous
+                  pouvons apporter des informations sur le travail d'encodafe effectué (intitulé du travail d'encodage,
+                  son ou ses auteurs, sa date de réalisation). De plus on trouve dans le <gi>teiHeader</gi> la balise
+                  <gi>profileDesc</gi> contient un référencement et une description des personnes ou personnages présents
+                  dans les textes de l'ouvrage étudié.
+               </seg>
+
+               <seg>
+                  Un élément <gi>facsimile</gi> dans lequel se trouve la représentation d’une source
+                  écrite sous la forme d’un ensemble d’images plutôt que sous forme de texte transcrit ou codé.
+                  Cet élément contient donc des balises <gi>surface</gi> définissant les sufaces écrites du manuscrit
+                  grâce à des balises <gi>zone</gi>. De plus, il comporte une balise <gi>graphic</gi> d'indiquer l'emplacement
+                  de l'image étudiée.
+               </seg>
+
+               <seg>
+                  Un élément <gi>text</gi> contenant comme on peut sans douter le texte du manuscrit. Il comporte une balise
+                  <gi>body</gi> qui contient tout le corps du texte. Ce body contient lui-même des balises <gi>p</gi> qui définissent
+                  le contenu des paragraphes du manuscrit encodé. Afin de respecter la disposition et la forme du texte
+                  des balises <gi>pb</gi> (indique un saut de page), <gi>cb</gi> (indique une nouvelle colonne) et
+                  <gi>lb</gi> (indique un saut à la ligne) ont été employées.
+               </seg>
+
+            </p>
+
+         </div2>
+
+         <div2>
+
+            <head>Organisation de la balise <gi>teiHeader</gi> </head>
+               <p>
+                  <seg>
+                  Comme expliqué auparavant, deux éléments compose le <gi>teiHeader</gi>
+                  <specList>
+                     <specDesc key="fileDesc"></specDesc>
+                     <specDesc key="profilDesc"/>
+                  </specList>
+                  </seg>
+               </p>
+
+
+               <div3>
+
+                  <head>Structure du <gi>fileDesc</gi></head>
+
+                  <p>
+                     <seg>
+                      Dans le <gi>fileDesc</gi> se trouve différentes balises:
+                      <specList>
+                         <specDesc key="titleStmt"></specDesc>
+                         <specDesc key="editionStmt"/>
+                         <specDesc key="publicationStmt"/>
+                         <specDesc key="sourceDesc"/>
+                      </specList>
+                     </seg>
+
+                      <seg>
+                           Dans <gi>titleStmt</gi> se trouve <gi>title</gi>, le titre de l'encodage et
+                           <gi>author</gi> son auteur.
+                      </seg>
+
+                      <seg>
+                          <gi>editionStmt</gi> regroupe les informations relatives à cette édition numérique.
+                          Ici nous avons inclus les balises <gi>edition</gi> contenant la balise <gi>date</gi> afin
+                          d'indiquer la date de l'édition, ainsi qu'une balise <gi>respStmt</gi> fournissant des
+                          informations sur les responsables de l'édition grâce à une balise <gi>resp</gi> décrivant
+                          la nature de la distribution du manuscrit et une balise <gi>persName</gi> pour présenter son auteur
+                          avec des balises <gi>forename</gi> (prénom) et <gi>surname</gi> (nom).
+                      </seg>
+
+                      <seg>
+                      <gi>publicationStmt</gi> contient toutes les informations de publication du manuscrit numérisé.
+                      </seg>
+
+                 <seg>
+                 <gi>sourceDesc</gi> fournit les sources disponibles sur le manuscrit numérisé. Ainsi
+                 <gi>sourceDesc</gi> contient une balises <gi>msDesc</gi> qui permet de décrire le manuscrit.
+                 Plusieurs balises se trouvent dans <gi>msDesc</gi>, à savoir <gi>msIdentifier</gi>,<gi>head</gi>,
+                 <gi>msContents</gi> et <gi>phyDesc</gi>.
+                 </seg>
+                 <seg>
+                 <gi>msIdentifier</gi> permet d'identifier
+                 le manuscrit à l'aide de différentes balises:
+                    <specList>
+                       <specDesc key="country"/>
+                       <specDesc key="settlement"/>
+                       <specDesc key="repository"/>
+                       <specDesc key="idno"/>
+                       <specDesc key="altIdentifier"/>
+                    </specList>
+                    <gi>country</gi>, <gi>settlement</gi> et <gi>repository</gi> définissent le pays et la localisation et
+                    le lieu de dépôt et de conservation du manuscrit.
+                    <gi>idno</gi> et <gi>altIdentifier</gi> donnent la cote et un identifiant alternatif du manuscrit.
+                  </seg>
+
+                  <seg>
+                     <gi>head</gi> contient simplement <gi>title</gi> (titre du manuscrit) et
+                     <gi>originDate</gi> (sa date d'édition)
+                  </seg>
+
+                  <seg>
+                     <gi>msContents</gi> permet de développer le contenu du manuscrit. Ici, il
+                     contient la balise <gi>msItem</gi> qui permet de définir le contenu étudié
+                     du manuscrit. Dans notre cas, les chapitres étudiés
+                     concernent la quête de Gauvain et la situation d'Hector qui se trouve aux folios 102
+                     et 103 (indiqués par <gi>locus</gi>), récit écrit par Gauthier Map (précisé par <gi>author</gi>)
+                     et écrit en ancien français (balise <gi>textLang</gi>)
+
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <msItem xml:id="Quête-de-Gauvain-et-situation-d-Hector">
+                           <locus from="102v" to="103v">folio 102v à 103v</locus>
+                           <author xml:id="GM">Gautier Map</author>
+                           <textLang mainLang="fre">Ancien français</textLang>
+                        </msItem>
+                     </egXML>
+                  </seg>
+                  </p>
+
+                    </div3>
+
+            <div3>
+
+               <head>Organisation du <gi>physDesc</gi></head>
+
+               <p>
+
+                  <seg>
+                    <gi>physDesc</gi> contient la description complète d'un manuscrit ou d'une partie
+                    de manuscrit. Aussi ici, <gi>physDesc</gi> est constitué de plusieurs balises:
+                    <specList>
+                       <specDesc key="objectDesc"/>
+                       <specDesc key="scriptDesc"/>
+                       <specDesc key="decoDesc"/>
+                       <specDesc key="bindingDesc"/>
+                    </specList>
+
+                  </seg>
+
+                  <seg>
+                    <gi>objetDesc</gi> décrit les composants matériels du matériel grâce à la balise
+                    <gi>supportDesc</gi> regroupe les éléments décrivant le support physique du texte du manuscrit.
+                    Il contient les balises <gi>support</gi> pour définir le support du manuscrit, <gi>extent</gi> pour
+                    définir la taille du support et <gi>fiolation</gi> pour déterminer le nombre de feuillets.
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                       <supportDesc>
+                          <support>Parchemin</support>
+                          <extent>
+                             <width unit="410mm"/>
+                             <height unit="300mm"/>
+                          </extent>
+                          <foliation>291 feuillets(dont quelques uns absents à la fin du manuscrit) et 10 pages de gardes au début et à la fin</foliation>
+                       </supportDesc>
+                    </egXML>
+                    Enfin dans <gi>objetDesc</gi> nous trouvons la balise <gi>layoutDesc</gi> qui décrit comment le texte est mis
+                    en page grâce à la balise <gi>layout</gi>.
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <layoutDesc>
+                       <layout columns="3">Texte justifié, tracés à la ligne de plomb
+                       </layout>
+                    </layoutDesc>
+                    </egXML>
+
+                  </seg>
+
+                  <seg>
+                    <gi>scriptDesc</gi> contient une description des scripts utilisés dans un manuscrit.
+                    A l'intérieur nous avons utilisé <gi>scriptNote</gi> pour décrire le script employé dans le manuscrit.
+                    <gi>decoDesc</gi> contient la description de la décoration du manuscrit, description
+                    faite avec des <gi>p</gi>.
+
+                    <gi>bindingDesc</gi> permet de décrire la reliure du manuscrit. C'est pourquoi à l'intérieur
+                    dans cette balise, on a la balise <gi>binding</gi> pour cette description avec des balises <gi>decoNote</gi> avec des <att>type</att> et des "<val>plats</val>",
+                    "<val>contreplats</val> et "<val>dos</val>" pour désigner les faces du manuscrit décrites.
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                       <bindingDesc>
+                          <binding>
+                             <decoNote type="plats">Reliure en cuir de veau raciné avec au centre en doré les armoiries de Séguier</decoNote>
+                             <decoNote type="dos">Dos à 7 nerfs en veau raciné. Présence d'initiales en dorée dans les cases
+                                pour la plupart effacées et difficile à déchiffrer. On peut deviner toutefois l'inscription "Lancelot"
+                                dans la deuxième case. Dans la dernière case, inscription à l'encre de la cote du mansucrit "Fr 16999"
+                             </decoNote>
+                             <decoNote type="contreplats">Contreplats de feuilles de parchemins avec étiquette de la cote du manuscrit
+                                "FR. 16999"
+                             </decoNote>
+                          </binding>
+                       </bindingDesc>
+                    </egXML>
+
+                    </seg>
+
+                  </p>
+               </div3>
+
+            <div3>
+
+            <head>Organisation du <gi>profileDesc</gi></head>
+
+            <p>
+                    <seg>
+                       <gi>profileDesc</gi> fournit une description détaillée des aspects non bibliographiques du texte.
+                       Cette balise nous intéresse car elle peut contenir <gi>particDesc</gi> qui décrit les locuteurs du texte
+                       et permet de dresser une liste des personnages grâce à <gi>listPerson</gi> qui contient des <gi>person</gi> avec
+                       un identifiant, les noms, des notes et pour certains des personnages un surnom (<gi>addNampe</gi>, <att>type</att>, "<val>surnom</val>")
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                          <particDesc>
+                             <listPerson>
+                                <person xml:id="Groadain">
+                                   <persName>
+                                      <forename>Groadain</forename>
+                                      <addName type="surnom">nain</addName>
+                                   </persName>
+                                </person>
+                                <person xml:id="Hestor">
+                                   <persName>
+                                      <forename>Hector</forename>
+                                      <nameLink>des</nameLink>
+                                      <surname>Mares</surname>
+                                   </persName>
+                                   <note>fils du roi Ban de <placeName ref="#Bénoïc">Bénoïc</placeName></note>
+                                </person>
+                              </listPerson>
+                             </particDesc>
+                       </egXML>
+
+                    </seg>
+               </p>
+            </div3>
+         </div2>
+
+         <div2>
+
+               <head>Structure du <gi>facsimile</gi></head>
+
+               <p>
+
+                    <seg>
+                        <gi>facsimile</gi>contient une représentation d’une source écrite sous la forme d’un ensemble d’images.
+                        Ceci est constitué d'une balise <gi>surface</gi> qui définit sur une surface écrite avec une balise <gi>graphic</gi>
+                        qui contient <att>url</att> et "<val>nom_du_fichier.JPEG</val>" avec pour déterminer les largeurs <att>widhr</att>
+                        et les hauteurs <att>height</att> avec des "<val>n en px</val>". De plus, sont présents des balises
+                           <gi>zone</gi> afin d'indiquer le numéro de la ligne étudiée grâce un identifiant <att>xml:id</att> et la
+                           avec pour valeur le numéro de ligne "<val>l"n"</val>". Bien que notre étude du texte commence à la moitié du texte de la
+                           page de manuscrit, pour des raisons pratiques, la comptage des lignes a commencé au nombre 1.
+                           Par ailleurs, dans <gi>zone</gi>, la position des
+                           lignes est indiquée par les attributs <att>points</att> et les valeurs des abscisses "<val>"n"</val>".
+
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <facsimile>
+                           <surface>
+                              <graphic url='lancelot_102v.JPEG' width='1024px' height='1387px' />
+
+                              <zone xml:id='l1' points=' 664,453  540,453  540,454  664,454 ' rendition="default" />
+
+                              <zone xml:id='l2' points=' 662,470  539,470  539,471  662,471 ' rendition="default" />
+
+                              <zone xml:id='l3' points=' 659,492  488,492  488,489  659,489 ' rendition="default" />
+
+                              <zone xml:id='l4' points=' 657,509  489,509  489,506  657,506 ' rendition="default" />
+                           </surface>
+                        </facsimile>
+                        </egXML>
+                 </seg>
+
+               </p>
+         </div2>
+
+         <div2>
+
+                       <head>Organisation du <gi>text</gi></head>
+
+            <p>
+
+                    <seg>
+                       La balise <gi>text</gi> est composé d'un élément central <gi>body</gi>
+                       Dans le <gi>body</gi> se trouve le corps du texte étudié, transcrit et balisé.
+                       A l'intérieur du <gi>body</gi>, le texte est encodé dans des balises <gi>p</gi>.
+                       Le texte contenu dans les balises <gi>p</gi>, afin de respecter sa structure dans
+                       le manuscrit original, est mis en forme par des balises <gi>pb</gi> pour indiquer les sauts
+                       de pages, par des balises <gi>cb</gi> pour indiquer une nouvelle colonne et des balises <gi>lb</gi>
+                       pour indiquer un saut à la ligne. De plus, chaque <gi>lb</gi> a pour attribut <att>facs</att>
+                       avec pour valeur sa ligne correspondant "<val>#ln</val>, en référence en cohérence avec les identifiants
+                       avec les identifiants des balises <gi>zone</gi> du <gi>facsimile</gi>.
+
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                          <text>
+                             <body xml:lang="fr">
+                                <p>
+                                   <cb/>
+                                   <lb facs="#l4"/>manoir oiant toute
+                                   <lb facs="#l5"/>sa gente mais ele dit
+                                   <lb facs="#l6"/>que ce ne puet estre a
+                                   <lb facs="#l7"/>tant se lievent. Et li
+                                </p>
+                             </body>
+                          </text>
+                       </egXML>
+
+                       Dans le texte encodé, les noms de personnages sont référencés avec l'élément
+                       <gi>persName</gi> et l'attribut <att>ref</att> et la valeur "<val>#name</val>
+                       correspondante dans la balise <gi>Person</gi>.
+
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                          <lb facs="#l142"/><persName ref="#Groadain">nains</persName> li conte la verite
+                          <lb facs="#l145"/><persName ref="#Hestor">hestor</persName> alons a lui et si
+                       </egXML>
+
+                       Les mots en abrégés sont signalés grâce à la <gi>abbr</gi> contenu dans la balise <gi>choice</gi>.
+                       Dans la balise <gi>abbr</gi> se trouve la balise <gi>expan</gi> (pour désigner l'expansion d'une
+                       abréviation) avec à l'intérieur la balise <gi>ex</gi> (pour signaler les lettres rajouter pa le
+                       transcripteur).
+
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                       <lb facs="#l251"/>desouz Car li <choice><abbr>chr</abbr><expan>ch<ex>eva</ex>l<ex>ie</ex>r</expan></choice> n el
+                       </egXML>
+
+                       Enfin, les lettrines ornementées en début de certains passages sont aussi signalées
+                       par la balise <gi>g</gi> (balise qui représente un glyphe ou un caractère) avec en attribut
+                       <att>type</att> et <att>rend</att> (pour définir le rendu) et comme valeurs respectives "<val>initiale</val>" et "<val>"color"</val>"
+                    </seg>
+            </p>
+
+         </div2>
+</div1>
+
+<div1>
+
+   <head>REGLES</head>
+
+
+           <schemaSpec ident="oddbyexample" start="TEI ">
+
+            <moduleRef key="tei"/>
+
+
+              <!-- REGLES DE VALIDATION-->
+
+              <!-- Une règle contraignant l’usage d’un attribut et sa ou ses valeurs-->
+              <elementSpec ident="lb" mode="change">
+                 <attList>
+                    <attDef ident="facs" mode="add"
+                       ns="http://www.exemple.com/ns/nonTEI">
+                    <desc xml:lang="fr">la balise <gi>lb</gi> doit comporter un attribut <att>facs</att></desc>
+                    </attDef>
+                 </attList>
+              </elementSpec>
+
+
+
+
+              <!--Une règle contraignant l’enchaînement de certains éléments-->
+
+
+
+
+
+
+              <!--Une règle contraignant la valeur d’un attribut ou l’usage d’un élément ou d’un attribut en fonction de son environnement-->
+              <elementSpec ident="persName" mode="change">
+                 <attList>
+                    <attDef ident="ref" mode="change">
+                       <desc xml:lang="fr">La valeur de l'attribut <att>ref</att> pour les éléments <gi>persName</gi> ne peut qu'un des noms de la liste ci-dessous</desc>
+                       <valList mode="add" type="closed">
+                          <valItem ident="Groadain"/>
+                          <valItem ident="Hestor"/>
+                          <valItem ident="Segurades"/>
+                          <valItem ident="Guenievre"/>
+                          <valItem ident="Artus"/>
+                          <valItem ident="Dame-de-Rohestoc"/>
+                       </valList>
+                    </attDef>
+                 </attList>
+              </elementSpec>
+
+
+
+
+
+
+            <!--Checking module textcrit-->
+
+            <classRef key="att.textCritical"/>
+            <classRef key="model.rdgLike"/>
+            <classRef key="model.rdgPart"/>
+            <classSpec ident="att.textCritical" type="atts" mode="change">
+               <attList>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="cause" mode="delete"/>
+                  <attDef ident="varSeq" mode="delete"/>
+                  <attDef ident="require" mode="delete"/>
+               </attList>
+            </classSpec>
+            <!--Checking module msdescription-->
+            <classRef key="model.physDescPart"/>
+            <!--Checking module namesdates-->
+            <classRef key="model.persNamePart"/>
+            <!--Checking module dictionaries-->
+            <classRef key="att.lexicographic"/>
+            <classRef key="model.entryLike"/>
+            <classRef key="model.formPart"/>
+            <classRef key="model.gramPart"/>
+            <classRef key="model.lexicalRefinement"/>
+            <classRef key="model.morphLike"/>
+            <classRef key="model.ptrLike.form"/>
+            <classSpec ident="att.lexicographic" type="atts" mode="change">
+               <attList>
+                  <attDef ident="expand" mode="delete"/>
+                  <attDef ident="split" mode="delete"/>
+                  <attDef ident="value" mode="delete"/>
+                  <attDef ident="location" mode="delete"/>
+                  <attDef ident="mergedIn" mode="delete"/>
+                  <attDef ident="opt" mode="delete"/>
+               </attList>
+            </classSpec>
+            <!--Checking module tagdocs-->
+            <classRef key="att.combinable"/>
+            <classRef key="att.identified"/>
+            <classRef key="model.contentPart"/>
+            <classSpec ident="att.combinable" type="atts" mode="change">
+               <attList>
+                  <attDef ident="mode" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.identified" type="atts" mode="change">
+               <attList>
+                  <attDef ident="ident" mode="delete"/>
+                  <attDef ident="predeclare" mode="delete"/>
+                  <attDef ident="module" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.ascribed.directed" type="atts" mode="change">
+               <attList>
+                  <attDef ident="toWhom" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.dimensions" type="atts" mode="change">
+               <attList>
+                  <attDef ident="unit" mode="delete"/>
+                  <attDef ident="quantity" mode="delete"/>
+                  <attDef ident="extent" mode="delete"/>
+                  <attDef ident="precision" mode="delete"/>
+                  <attDef ident="scope" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.damaged" type="atts" mode="change">
+               <attList>
+                  <attDef ident="agent" mode="delete"/>
+                  <attDef ident="degree" mode="delete"/>
+                  <attDef ident="group" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.datable.w3c" type="atts" mode="change">
+               <attList>
+                  <attDef ident="from" mode="delete"/>
+                  <attDef ident="to" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.datable" type="atts" mode="change">
+               <attList>
+                  <attDef ident="calendar" mode="delete"/>
+                  <attDef ident="period" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.divLike" type="atts" mode="change">
+               <attList>
+                  <attDef ident="org" mode="delete"/>
+                  <attDef ident="sample" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.media" type="atts" mode="change">
+               <attList>
+                  <attDef ident="width" mode="delete"/>
+                  <attDef ident="height" mode="delete"/>
+                  <attDef ident="scale" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.interpLike" type="atts" mode="change">
+               <attList>
+                  <attDef ident="inst" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.naming" type="atts" mode="change">
+               <attList>
+                  <attDef ident="role" mode="delete"/>
+                  <attDef ident="nymRef" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.typed" type="atts" mode="change">
+               <attList>
+                  <attDef ident="subtype" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.pointing" type="atts" mode="change">
+               <attList>
+                  <attDef ident="targetLang" mode="delete"/>
+                  <attDef ident="evaluate" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.pointing.group" type="atts" mode="change">
+               <attList>
+                  <attDef ident="domains" mode="delete"/>
+                  <attDef ident="targFunc" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.segLike" type="atts" mode="change">
+               <attList>
+                  <attDef ident="function" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.timed" type="atts" mode="change">
+               <attList>
+                  <attDef ident="start" mode="delete"/>
+                  <attDef ident="end" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.transcriptional" type="atts" mode="change">
+               <attList>
+                  <attDef ident="status" mode="delete"/>
+                  <attDef ident="cause" mode="delete"/>
+                  <attDef ident="seq" mode="delete"/>
+               </attList>
+            </classSpec>
+            <classSpec ident="att.personal" type="atts" mode="change">
+               <attList>
+                  <attDef ident="full" mode="delete"/>
+                  <attDef ident="sort" mode="delete"/>
+               </attList>
+            </classSpec>
+            <!--Checking module core-->
+            <moduleRef key="core"
+                       include="p hi desc term name date abbr ptr ref head graphic title publisher pb cb lb"/>
+            <elementSpec ident="desc" mode="change">
+               <attList>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="term" mode="change">
+               <attList>
+                  <attDef ident="target" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="bla"/>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="name" mode="change">
+               <attList>
+                  <attDef ident="when" mode="delete"/>
+                  <attDef ident="notBefore" mode="delete"/>
+                  <attDef ident="notAfter" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="date" mode="change">
+               <attList>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="abbr" mode="change">
+               <attList>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="ptr" mode="change">
+               <attList>
+                  <attDef ident="mimeType" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="ref" mode="change">
+               <attList>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="head" mode="change">
+               <attList>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="title" mode="change">
+               <attList>
+                  <attDef ident="level" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="when" mode="delete"/>
+                  <attDef ident="notBefore" mode="delete"/>
+                  <attDef ident="notAfter" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <!--Checking module figures-->
+            <!--Checking module header-->
+            <moduleRef key="header"
+                       include="teiHeader fileDesc titleStmt publicationStmt sourceDesc revisionDesc change"/>
+            <elementSpec ident="change" mode="change">
+               <attList>
+                  <attDef ident="target" mode="delete"/>
+                  <attDef ident="when" mode="delete"/>
+                  <attDef ident="notBefore" mode="delete"/>
+                  <attDef ident="notAfter" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <!--Checking module gaiji-->
+            <!--Checking module verse-->
+            <!--Checking module transcr-->
+            <!--Checking module linking-->
+            <!--Checking module analysis-->
+            <classRef key="att.linguistic"/>
+            <classSpec ident="att.linguistic" type="atts" mode="change">
+               <attList>
+                  <attDef ident="lemma" mode="delete"/>
+                  <attDef ident="lemmaRef" mode="delete"/>
+                  <attDef ident="pos" mode="delete"/>
+                  <attDef ident="msd" mode="delete"/>
+                  <attDef ident="join" mode="delete"/>
+               </attList>
+            </classSpec>
+            <!--Checking module textstructure-->
+            <moduleRef key="textstructure" include="TEI text body div"/>
+            <elementSpec ident="TEI" mode="change">
+               <attList>
+                  <attDef ident="version" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="text" mode="change">
+               <attList>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="div" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="section"/>
+                        <valItem ident="subsection"/>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+
+
+         </schemaSpec>
+
+</div1>
+      </body>
+   </text>
+</TEI>
